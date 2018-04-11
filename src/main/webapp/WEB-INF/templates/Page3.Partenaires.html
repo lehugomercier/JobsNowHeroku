@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!-- Page d'accueil avec la présentation de l'asso -->
+
+<head>
+	<meta charset="UTF-8">
+	<title>JobsNow - Partenaires</title>
+	<link rel="stylesheet" href="JobsNow.css">
+	<link rel="icon" type="image/png" href="images/logoJN.png"/>
+</head>
+
+<body>
+
+	<!-- Javascript -->
+	<script type="text/javascript">
+	</script>
+
+	<!-- Contenu du site -->
+	<div class="ContenuSansFooter">
+
+	<!-- Barre de navigation -->
+		<div class="topnav" id="myTopnav" th:insert="~{Fragments::barre_navigation}"></div>
+
+		<!-- Partenaires -->
+		<div id="divPartenaires">
+			<h1>Nos partenaires</h1>
+			<div class="divPartenaire">
+				<div class="logoPartenaire">
+					<p>logo<p>
+				</div>
+				<div class="descriptionPartenaire">
+					<h3>Partenaire</h3>
+					<p>Description partenaire</p>
+				</div>
+			</div>
+			<div class="divPartenaire">
+				<div class="logoPartenaire">
+					<p>logo<p>
+				</div>
+				<div class="descriptionPartenaire">
+					<h3>Partenaire</h3>
+					<p>Description partenaire</p>
+				</div>
+			</div>
+			<div class="divPartenaire">
+				<div class="logoPartenaire">
+					<p>logo<p>
+				</div>
+				<div class="descriptionPartenaire">
+					<h3>Partenaire</h3>
+					<p>Description partenaire</p>
+				</div>
+			</div>
+			<div class="divPartenaire">
+				<div class="logoPartenaire">
+					<p>logo<p>
+				</div>
+				<div class="descriptionPartenaire">
+					<h3>Partenaire</h3>
+					<p>Description partenaire</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div th:insert="~{Fragments::footer}"></div>
+
+</body>
+</html>

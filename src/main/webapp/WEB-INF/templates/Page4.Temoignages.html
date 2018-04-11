@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!-- Page d'accueil avec la présentation de l'asso -->
+
+<head>
+	<meta charset="UTF-8">
+	<title>JobsNow - Temoignages</title>
+	<link rel="stylesheet" href="JobsNow.css">
+	<link rel="icon" type="image/png" href="images/logoJN.png"/>
+</head>
+
+<body>
+
+	<!-- Javascript -->
+	<script type="text/javascript">
+	</script>
+
+	<!-- Contenu du site -->
+	<div class="ContenuSansFooter">
+
+		<!-- Barre de navigation -->
+		<div class="topnav" id="myTopnav" th:insert="~{Fragments::barre_navigation}"></div>
+
+			<!-- Temoignages -->
+			<div id="divTemoignages">
+				<h1>Témoignages</h1>
+				<div class="divTemoignage">
+					<div class="photoTemoin">
+						<p>temoin<p>
+					</div>
+					<div class="texteTemoignage">
+						<p>Texte du témoignage</p>
+						<p>Témoin, classe</p>
+					</div>
+				</div>
+				<div class="divTemoignage">
+					<div class="photoTemoin">
+						<p>temoin<p>
+					</div>
+					<div class="texteTemoignage">
+						<p>Texte du témoignage</p>
+						<p>Témoin, classe</p>
+					</div>
+				</div>
+				<div class="divTemoignage">
+					<div class="photoTemoin">
+						<p>temoin<p>
+					</div>
+					<div class="texteTemoignage">
+						<p>Texte du témoignage</p>
+						<p>Témoin, classe</p>
+					</div>
+				</div>
+				<div class="divTemoignage">
+					<div class="photoTemoin">
+						<p>temoin<p>
+					</div>
+					<div class="texteTemoignage">
+						<p>Texte du témoignage</p>
+						<p>Témoin, classe</p>
+					</div>
+				</div>
+			</div>
+
+	</div>
+
+	<!-- Footer -->
+	<div th:insert="~{Fragments::footer}"></div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>JobsNow - Accueil</title>
+		<link rel="stylesheet" href="JobsNow.css">
+		<link rel="icon" type="image/png" href="images/logoJN.png"/>
+	</head>
+
+	<body>
+
+		<!-- Javascript -->
+		<script type="text/javascript">
+		</script>
+
+		<!-- Contenu du site -->
+		<div class="ContenuSansFooter">
+
+			<!-- Barre de navigation -->
+			<div class="topnav" id="myTopnav" th:insert="~{Fragments::barre_navigation}"></div>
+
+			<!-- Photo équipe JN -->
+			<div id="divPhotoJN">
+				<img src="images/couvJN.png" id="photoJN" alt="Couverture">
+			</div>
+
+			<!-- Présentation de Jobs Now -->
+			<div id="divPresentationJN">
+				<h1>Présentation de Jobs Now</h1>
+				<p>
+					JobsNow est une association à but non lucratif destinée aux étudiants du Groupe Yncréa.
+					L’association est déclarée à la préfecture sous le statut de la loi de 1901. Elle est composée d’un bureau de trois membres Président(e), Secrétaire et Trésorier(e), avec trois responsables communication et trois responsables recrutement, issus à parité de chaque école.
+					Sa mission est de développer des partenariats avec des entreprises, de relayer les offres de jobs étudiants HEI ISA et ISEN qu’elles proposent et de présenter, dans les délais impartis, une liste d’étudiants volontaires et adéquats (compétences, comportement, disponibilité notamment).
+					L’association ne prend pas en charge la gestion administrative et sociale des étudiants.
+					La qualité des candidatures présentées et la réactivité de l’association feront le succès de celle-ci.
+				</p>
+				<button href="">Télécharger la plaquette</button>
+			</div>
+
+			<!-- Présentation de l'équipe -->
+			<div id="divEquipe">
+				<h1>L'équipe</h1>
+				<div id="membresEquipe">
+					<div class="membreEquipe">
+						<img src="images/logoMembre.png" class="logoMembre" alt="Membre">
+						<p>Membre</p>
+					</div>
+					<div class="membreEquipe">
+						<img src="images/logoMembre.png" class="logoMembre" alt="Membre">
+						<p>Membre</p>
+					</div>
+					<div class="membreEquipe">
+						<img src="images/logoMembre.png" class="logoMembre" alt="Membre">
+						<p>Membre</p>
+					</div>
+					<div class="membreEquipe">
+						<img src="images/logoMembre.png" class="logoMembre" alt="Membre">
+						<p>Membre</p>
+					</div>
+					<div class="membreEquipe">
+						<img src="images/logoMembre.png" class="logoMembre" alt="Membre">
+						<p>Membre</p>
+					</div>
+					<div class="membreEquipe">
+						<img src="images/logoMembre.png" class="logoMembre" alt="Membre">
+						<p>Membre</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div th:insert="~{Fragments::footer}"></div>
+
+	</body>
+</html>

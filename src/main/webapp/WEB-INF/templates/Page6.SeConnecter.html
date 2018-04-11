@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!-- Page d'accueil avec la présentation de l'asso -->
+
+<head>
+	<meta charset="UTF-8">
+	<title>JobsNow - Connexion</title>
+	<link rel="stylesheet" href="JobsNow.css">
+	<link rel="icon" type="image/png" href="images/logoJN.png"/>
+</head>
+
+<body>
+
+	<!-- Javascript -->
+	<script type="text/javascript">
+	</script>
+
+	<!-- Contenu du site -->
+	<div class="ContenuSansFooter">
+
+		<!-- Barre de navigation -->
+		<div class="topnav" id="myTopnav" th:insert="~{Fragments::barre_navigation}"></div>
+
+			<!-- Se connecter -->
+			<div class="divFormulaire">
+				<h1>Se connecter</h1>
+				<form class="formulaire">
+					<input type="email" name="email" placeholder="Email" class="input">
+					<input type="text" name="mdp" placeholder="Mot de passe" class="input">
+					<input type="submit" name="connexion" placeholder="Se connecter" class="inputButton">
+				</form>
+			</div>
+
+
+			<!-- S'inscrire -->
+			<div class="divFormulaire">
+				<h1>S'inscrire</h1>
+				<form class="formulaire" method="post" action="addUtilisateur">
+					<input type="text" name="nom" placeholder="Nom" class="input" required>
+					<input type="text" name="prenom" placeholder="Prénom" class="input" required>
+					<input type="date" name="dateNaissance" placeholder="Date de naissance" class="input" required>
+					<input type="text" name="adresse" placeholder="Adresse" class="input" required>
+					<input type="text" name="tel" placeholder="Numéro de téléphone" class="input" required>
+					<input type="email" name="email" placeholder="Email Yncréa" class="input" pattern=".+yncrea.fr" title="Merci de fournir uniquement une adresse Yncrea" required>
+					<input type="password" name="mdp" placeholder="Mot de passe" class="input" required>
+					<input type="submit" name="inscription" placeholder="S'inscrire" class="inputButton">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div th:insert="~{Fragments::footer}"></div>
+
+</body>
+</html>
